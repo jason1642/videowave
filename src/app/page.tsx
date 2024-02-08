@@ -1,6 +1,14 @@
+'use client'
 import Image from "next/image";
-
+import React from 'react'
+import { useRef } from 'react'
+import { useAppSelector, useAppDispatch, useAppStore } from '../redux/hooks'
 export default function Home() {
+  const count = useAppSelector((state:any) => state)
+  React.useEffect(()=>{
+    console.log(count)
+  },[count])
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
