@@ -14,7 +14,8 @@ const Home: React.FunctionComponent<IHomeProps> = (props) => {
     },[count])
     return (
     
-    <div>
+    <div className='text-white'>
+        This is the home page
         
     </div>
 
