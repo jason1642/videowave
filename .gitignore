@@ -27,7 +27,12 @@ yarn-error.log*
 
 # local env files
 .env*.local
-
+*.pyc
+__pycache__
+db.sqlite3
+/env
+*.env
+.vscode
 # vercel
 .vercel
 
